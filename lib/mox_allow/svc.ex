@@ -3,5 +3,7 @@ defmodule MoxAllow.SvcBehaviour do
 end
 
 defmodule MoxAllow.Svc do
+  @behaviour MoxAllow.SvcBehaviour
+  @impl true
   def svc_call(), do: :answer
 end

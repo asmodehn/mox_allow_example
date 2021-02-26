@@ -1,3 +1,2 @@
 defmodule MoxAllow do
-
 end

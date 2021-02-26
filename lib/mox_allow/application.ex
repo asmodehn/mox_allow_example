@@ -8,7 +8,7 @@ defmodule MoxAllow.Application do
   def start(_type, _args) do
     children = [
       # Starting Binance Client GenServer
-      {MoxAllow.Srv, name: MoxAllow.Srv},
+      {MoxAllow.Srv, name: MoxAllow.Srv}
     ]
 
     Supervisor.start_link(children, strategy: :one_for_one, name: MoxAllow.Supervisor)
